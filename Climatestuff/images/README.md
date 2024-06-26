@@ -1,3 +1,3 @@
-### [Photography Portfolio Website](https://youtu.be/qKBLkcMj75M)
+### [Sample preapred Website](https://youtu.be/qKBLkcMj75M)
 
 ![](./thumbnail.jpg)

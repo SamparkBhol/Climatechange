@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"
+            content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+        <title>Climate Change and Heat Waves</title>
+        <!-- GOOGLE FONT (Monserrat)-->
+        <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap"
+            rel="stylesheet">
+
+        <!--ICONSOUT CDN LINK-->
+        <link rel="stylesheet"
+            href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+        <!--Custom StyleSheet-->
+
+        <link rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+
+        <link rel="stylesheet" href="./style.css">
+        
+    </head>
+    <body>
+        <nav>
+            <div class="container nav__container">
+                <a href="index.html" class="nav__logo"><img
+                        src="./images/logo.png" alt="Nav logo"></a>
+                <ul class="nav__links">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#exhibition">Events</a></li>
+                </ul>
+                <ul class="nav__socials">
+                    <li><a href="https://instagram.com/" target="_blank"><i
+                                class="uil uil-instagram"></i></a></li>
+                    <li><a href="https://twitter.com/" target="_blank"><i
+                                class="uil uil-twitter"></i></a></li>
+                    <li><a href="https://youtube.com/" target="_blank"><i
+                                class="uil uil-youtube"></i></a></li>
+                    <li><a href="https://linkedin.com/" target="_blank"><i
+                                class="uil uil-linkedin"></i></a></li>
+                </ul>
+                <button class="nav__toggle-btn" id="nav__toggle-open"><i
+                        class="uil uil-bars"></i></button>
+                <button class="nav__toggle-btn" id="nav__toggle-close"><i
+                        class="uil uil-multiply"></i></button>
+            </div>
+        </nav>
+        <!--===========================================End Of Navbar=============================================-->
+
+        <!--===========================================Start Header===============================================-->
+        <header>
+            <div class="container header__container">
+                <div class="header__left">
+                    <div class="header__image-bg"></div>
+                    <div class="header__image-lg">
+                        <img src="./images/header.jpg" alt="Header Image">
+                    </div>
+                    <div class="header__image-sm">
+                        <img src="./images/header.jpg" alt="Header Image">
+                    </div>
+                </div>
+                <div class="header__right">
+                    <div class="header__head">
+                        <div class="empty header__empty"></div>
+                        <a class="header__tag">#ClimateChangeAwareness</a>
+                    </div>
+                    <h1>Understanding the Impact of Climate Change</h1>
+                    <p>Join us in our efforts to raise awareness about climate
+                        change and its effects on our planet. Learn how heat
+                        waves and other extreme weather events are becoming more
+                        frequent and severe.</p>
+                    <a href="mailto:ABC@gmail.com" class="header__btn-md">Let's
+                        Talk About It</a>
+                </div>
+            </div>
+        </header>
+        <div class="header__frames">
+            <div class="header__frame">
+                <img src="./images/frame1.jpg" alt="Header-frame one">
+            </div>
+            <div class="header__frame">
+                <img src="./images/frame2.jpg" alt="Header-frame two">
+            </div>
+        </div>
+        <a href="mailto:ABC@gmail.com" class="contact__btn header__btn">
+            <i class="uil uil-arrow-up-right"></i>
+            <p>CONTACT - SEND ME AN EMAIL</p>
+        </a>
+        <!--===========================================End Header===============================================-->
+
+        <!--===========================================About Section===============================================-->
+        <section id="about">
+            <div class="container about__container">
+                <h2 class="about__title">About Climate Change</h2>
+                <a href="mailto:ABC@gmail.com" class="contact__btn about__btn">
+                    <i class="uil uil-arrow-up-right"></i>
+                    <p>CONTACT - SEND ME AN EMAIL</p>
+                </a>
+                <div class="about__left">
+                    <div class="about__image">
+                        <div class="about__image-bg"></div>
+                        <div class="about__image-lg">
+                            <img src="./images/about.jpg"
+                                alt="About Climate Change">
+                        </div>
+                        <div class="about__image-sm">
+                            <img src="./images/about.jpg"
+                                alt="About Climate Change">
+                        </div>
+                    </div>
+                </div>
+                <div class="about__right">
+                    <div class="about__content">
+                        <p>Climate change is a significant and lasting change in
+                            the statistical distribution of weather patterns
+                            over periods ranging from decades to millions of
+                            years. It can be a change in the average weather
+                            conditions or the distribution of events around that
+                            average.</p>
+                        <p>Climate change is primarily caused by human
+                            activities, such as burning fossil fuels,
+                            deforestation, and industrial processes. These
+                            activities release large amounts of greenhouse
+                            gases, such as carbon dioxide (CO2) and methane
+                            (CH4), into the atmosphere. These gases trap heat
+                            from the sun, causing the Earth's temperature to
+                            rise.</p>
+                        <p>The effects of climate change are far-reaching and
+                            include rising sea levels, more frequent and severe
+                            heat waves, changing precipitation patterns, and
+                            increased frequency of extreme weather events such
+                            as hurricanes and droughts. These changes can have
+                            devastating impacts on ecosystems, human health, and
+                            economies worldwide.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--===========================================Gallery Section===============================================-->
+        <section class="gallery__heading">
+            <div class="container gallery__container">
+                <div class="gallery__head">
+                    <h2 class="gallery__title">Impact Gallery</h2>
+                    <div class="empty gallery__empty"></div>
+                </div>
+            </div>
+        </section>
+
+        <div class="full-img" id="fullImgBox">
+            <img src="./images/gallery1.jpg" alt id="fullImg">
+            <span onclick="closeFullImg()">X</span>
+        </div>
+
+        <div class="img-gallery">
+            <img src="./images/gallery1.jpg" onclick="openFullImg(this.src)"
+                alt>
+            <img src="./images/gallery2.jpg" onclick="openFullImg(this.src)"
+                alt>
+            <img src="./images/gallery3.jpg" onclick="openFullImg(this.src)"
+                alt>
+            <img src="./images/gallery4.jpg" onclick="openFullImg(this.src)"
+                alt>
+            <img src="./images/gallery6.jpg" onclick="openFullImg(this.src)"
+                alt>
+            <img src="./images/gallery5.jpg" onclick="openFullImg(this.src)"
+                alt>
+            <img src="./images/gallery7.jpg" onclick="openFullImg(this.src)"
+                alt>
+            <img src="./images/gallery8.jpg" onclick="openFullImg(this.src)"
+                alt>
+            <img src="./images/gallery9.jpg" onclick="openFullImg(this.src)"
+                alt>
+            <img src="./images/gallery10.jpg" onclick="openFullImg(this.src)"
+                alt>
+            <img src="./images/gallery11.jpg" onclick="openFullImg(this.src)"
+                alt>
+        </div>
+        <!--===========================================End Gallery Section===============================================-->
+
+        <!--===========================================Event Section===============================================-->
+        <section class="event__heading">
+            <div class="container event__container">
+                <div class="event__head">
+                    <h2 class="event__title">Events</h2>
+                </div>
+            </div>
+        </section>
+
+        <section class="slide__container">
+            <div class="slider-wrapper">
+                <div class="slider">
+                    <img id="slide1" src="./images/e1.jpg" alt />
+                    <img id="slide2" src="./images/e2.jpg" alt />
+                    <img id="slide3" src="./images/e3.jpg" alt />
+                </div>
+                <div class="slider-nav">
+                    <a href="#slide-1"></a>
+                    <a href="#slide-2"></a>
+                    <a href="#slide-3"></a>
+                </div>
+            </div>
+            <div class="event__details">
+                <h3>Upcoming Events</h3>
+                <p>Join us for a series of events focused on raising awareness
+                    about climate change and its impact on our planet. Our
+                    events feature expert speakers, interactive workshops, and
+                    community discussions aimed at empowering individuals to
+                    take action against climate change.</p>
+                <p><strong>Event 1:</strong> Climate Change 101 - Understanding
+                    the Basics</p>
+                <p><strong>Date:</strong> July 10, 2024</p>
+                <p><strong>Location:</strong> Green Earth Auditorium</p>
+                <p>Join us for an introductory seminar on climate change, its
+                    causes, and its impacts. This event is perfect for anyone
+                    looking to gain a foundational understanding of this
+                    critical issue.</p>
+                <p><strong>Event 2:</strong> Climate Action Workshop</p>
+                <p><strong>Date:</strong> August 15, 2024</p>
+                <p><strong>Location:</strong> Eco-Friendly Community Center</p>
+                <p>Participate in a hands-on workshop where you will learn
+                    practical steps you can take to reduce your carbon footprint
+                    and advocate for environmental policies. This workshop is
+                    designed for all ages and skill levels.</p>
+                <p><strong>Event 3:</strong> Youth Climate Summit</p>
+                <p><strong>Date:</strong> September 25, 2024</p>
+                <p><strong>Location:</strong> Future Leaders Hall</p>
+                <p>Engage with young climate activists and leaders at our Youth
+                    Climate Summit. This event provides a platform for youth to
+                    share their ideas, experiences, and solutions for combating
+                    climate change.</p>
+            </div>
+        </section>
+
+        <!-- Chatbot Button -->
+        <div class="chatbot-button">
+            <button id="chatbot-toggle-btn"><i
+                    class="uil uil-comment-alt"></i></button>
+        </div>
+
+        <!-- Chatbot Popup Container -->
+        <div class="chatbot-popup" id="chatbot-popup">
+            <div class="chatbot-header">
+                <span class="chatbot-title">Climate Change Chatbot</span>
+                <button id="chatbot-close-btn">&times;</button>
+            </div>
+            <div class="chatbot-messages" id="chatbot-messages">
+                <div class="chatbot-message bot">
+                    <p>Welcome to Climate Change Awareness Chatbot!</p>
+                </div>
+            </div>
+            <div class="chatbot-input">
+                <input type="text" id="chatbot-input"
+                    placeholder="Type your message...">
+                <button id="chatbot-send-btn">Send</button>
+            </div>
+        </div>
+
+        <!--===========================================Footer===============================================-->
+        <footer>
+            <div class="container footer__container">
+                <div class="footer__head">
+                    <h2 class="footer__title">support@gatter.com</h2>
+                    <a href="mailto:ABC@gmail.com" class="footer__btn"><i
+                            class="uil uil-arrow-up-right"></i></a>
+                </div>
+                <ul class="footer__links">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#events">Events</a></li>
+                </ul>
+            </div>
+        </footer>
+
+        <script src="./main.js"></script>
+    </body>
+</html>
